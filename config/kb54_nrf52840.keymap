@@ -22,16 +22,6 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
-
-        arrows: arrows {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ARROWS";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {

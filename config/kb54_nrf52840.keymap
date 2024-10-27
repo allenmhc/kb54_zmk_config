@@ -52,7 +52,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <95>;
         };
 
         Arrows_layers: Arrows_layers {
@@ -62,7 +63,8 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <95>;
         };
     };
 

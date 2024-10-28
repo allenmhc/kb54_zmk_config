@@ -8,13 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    flavor = "tap-preferred";
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <95>;
-    tapping-term-ms = <300>;
-};
-
 / {
     behaviors {
         hrml: hrml {
@@ -68,6 +61,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_pageup {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <51 52>;
+        };
+
+        combo_pagedown {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <52 53>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -80,11 +87,11 @@
             //                    | LWR | GUI | BSPC|   | ENT | SPC  | RSE |
 
             bindings = <
-&gresc             &kp N1        &kp N2            &kp N3                       &kp N4              &kp N5                &kp N6               &kp N7                     &kp N8                 &kp N9               &kp N0               &kp RIGHT_BRACKET
-&kp TAB            &kp Q         &kp W             &kp E                        &kp R               &kp T                 &kp Y                &kp U                      &kp I                  &kp O                &kp P                &mt BSLH LBKT
-&kp RIGHT_CONTROL  &kp A         &kp S             &kp D                        &kp F               &mt LEFT_BRACKET G    &mt RIGHT_BRACKET H  &kp J                      &kp K                  &kp L                &kp SEMI             &kp SQT
-&kp LSHFT          &hrml CAPS Z  &hrml LEFT_ALT X  &hrml LEFT_GUI C             &hrml LEFT_SHIFT V  &kp B                 &kp N                &hrmr RIGHT_SHIFT M        &hrmr RIGHT_GUI COMMA  &hrmr RIGHT_ALT DOT  &hrmr CAPSLOCK FSLH  &kp ENTER
-                                                   &Arrows LEFT_ALT LEFT_ARROW  &Arrows LGUI RIGHT  &kp BSPC              &kp SPACE            &Arrows_layers 2 UP_ARROW  &Arrows_layers 1 DOWN
+&gresc             &kp N1        &kp N2            &kp N3                       &kp N4              &kp N5                &kp N6                     &kp N7               &kp N8                 &kp N9               &kp N0               &kp RIGHT_BRACKET
+&kp TAB            &kp Q         &kp W             &kp E                        &kp R               &kp T                 &kp Y                      &kp U                &kp I                  &kp O                &kp P                &mt BSLH LBKT
+&kp RIGHT_CONTROL  &kp A         &kp S             &kp D                        &kp F               &mt LEFT_BRACKET G    &mt RIGHT_BRACKET H        &kp J                &kp K                  &kp L                &kp SEMI             &kp SQT
+&kp LSHFT          &hrml CAPS Z  &hrml LEFT_ALT X  &hrml LEFT_GUI C             &hrml LEFT_SHIFT V  &kp B                 &kp N                      &hrmr RIGHT_SHIFT M  &hrmr RIGHT_GUI COMMA  &hrmr RIGHT_ALT DOT  &hrmr CAPSLOCK FSLH  &kp ENTER
+                                                   &Arrows LEFT_ALT LEFT_ARROW  &Arrows LGUI RIGHT  &kp BSPC              &Arrows_layers 2 UP_ARROW  &kp SPACE            &Arrows_layers 1 DOWN
             >;
         };
 

@@ -83,6 +83,25 @@
             bindings = <&kp END>;
             key-positions = <49 50>;
         };
+
+        combo_double_semicolon {
+            bindings = <&macro_double_semicolon>;
+            key-positions = <40 41>;
+        };
+
+        combo {
+            bindings = <&kp ENTER>;
+            key-positions = <42 43>;
+        };
+    };
+
+    macros {
+        macro_double_semicolon: macro_double_semicolon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI &kp SEMICOLON>;
+            label = "MACRO_DOUBLE_SEMICOLON";
+        };
     };
 
     keymap {

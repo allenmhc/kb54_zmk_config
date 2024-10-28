@@ -99,7 +99,7 @@
         macro_double_semicolon: macro_double_semicolon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SEMI &kp SEMICOLON>;
+            bindings = <&kp Z &kp Z>;
             label = "MACRO_DOUBLE_SEMICOLON";
         };
     };

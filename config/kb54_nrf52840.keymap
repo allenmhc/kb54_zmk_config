@@ -89,7 +89,7 @@
             key-positions = <40 41>;
         };
 
-        combo {
+        combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <42 43>;
         };

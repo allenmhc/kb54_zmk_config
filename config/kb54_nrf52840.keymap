@@ -17,7 +17,7 @@
 
             #binding-cells = <2>;
             quick-tap-ms = <175>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             require-prior-idle-ms = <95>;
             flavor = "balanced";
             hold-trigger-on-release;
@@ -31,7 +31,7 @@
 
             #binding-cells = <2>;
             quick-tap-ms = <175>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             require-prior-idle-ms = <95>;
             flavor = "balanced";
             hold-trigger-on-release;

@@ -81,21 +81,11 @@
 
         combo_home {
             bindings = <&kp HOME>;
-            key-positions = <48 49>;
+            key-positions = <40 41>;
         };
 
         combo_end {
             bindings = <&kp END>;
-            key-positions = <49 50>;
-        };
-
-        combo_double_semicolon {
-            bindings = <&macro_double_semicolon>;
-            key-positions = <40 41>;
-        };
-
-        combo_enter {
-            bindings = <&kp ENTER>;
             key-positions = <42 43>;
         };
     };
